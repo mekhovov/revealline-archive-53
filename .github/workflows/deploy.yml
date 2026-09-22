@@ -17,6 +17,32 @@ concurrency:
   group: archive-53-pages
   cancel-in-progress: false
 jobs:
+  audit-public-bytes:
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/codex/audit-archive53-http'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out reviewed bounded public auditor and immutable evidence
+        uses: actions/checkout@v4
+        with:
+          path: audit-runner
+          persist-credentials: false
+      - name: Check out exact deployed archive infrastructure
+        uses: actions/checkout@v4
+        with:
+          ref: 9ebb2c397b6db59561129147b8758ad24e0489c2
+          path: audit-runner/audit/repository
+          persist-credentials: false
+      - name: Verify every fixed canonical HTTP body and explicit MIME
+        run: python3 audit-runner/audit/http-tools/http_audit.py --run
+      - name: Retain every attempt and complete public inventory evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: archive53-public-http-evidence
+          if-no-files-found: error
+          path: audit-runner/audit/http/
   build:
     if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
