@@ -1,0 +1,27 @@
+commit 1107f570508e0d107440236b6aeedbce8506cd7d
+tree 793ee7e682e206e0914754cf60fd93af0792c463
+parent 0a9454f4899ccf30e6205af592c0051c245e9c48
+parent 9ec1a793eccf13d742d9c85194f063c4c4030cd3
+author Oleksandr Mekhovov <oleksandr.mekhovov@coupa.com> 1790108233 +0200
+committer GitHub <noreply@github.com> 1790108233 +0200
+gpgsig -----BEGIN PGP SIGNATURE-----
+ 
+ wsFcBAABCAAQBQJqsuJJCRC1aQ7uu5UhlAAAJ9wQADWMKF2nUZaw7atPaamfGzHn
+ G5AFcISJ7R50+HLiig/ACwxWsHfiNmYBx8YxzrAv1vB5jGzCJ7f18Ljkqe2y3x4R
+ 1Q0wCIvAu+np+KJrT1Vlk8E2yPdWqldZTjRRNOXx3LkORwsKeiPi9bgWpIyHaoIA
+ 8Y45tedzmlSWXCeYjnUSefG6Z9mfhnWGC2yQGNgH/sFKp/mQwCYskZ5xxUBpwnXr
+ DdH8reMJHkiIN4qHbtxl6vEWqe7ThBN+Oet7A4NUieuSrRXI4u+ffEX5VJUuZmrX
+ gg5S3CDHX9sdWa/RI9KoY8cAjkezSjZ/DCmk4byn0oGnkOUl0rJdUfrYlhRFM1PT
+ Ktcw1nGTJS+WRUr8RqmpczyrMCdvnVtFeBuI4nBChc/CzvGSpAvCWF0D4vt+uHjV
+ AjYqyAmOdkSJa9/icGcnbfXI1vndP4MwBFrzHY26dAKT5iv/C+NEeHsTCmw6x4Mz
+ um0hnL2F7fv+F1iX37ktm9OTWOW0u8VqnuA5TZ70AdzifR6DKdHwUGyAV3uDpLcg
+ ZjpgocALuV+uPTa2W5rV+bqan3XW7uxriFiLoRuQA19lB/j+5eS2SKRRJuCiX/9C
+ VnvvV+meAKgzneGCokmobNBNkHaZLCg5Zby+RjbjIS9nfjywTvfl/+zlvoQUhpPM
+ MvpCZ49OqyMOj2Hmv9Gr
+ =Rjvd
+ -----END PGP SIGNATURE-----
+ 
+
+    Merge pull request #268 from mekhovov/codex/unified-mission-library
+    
+    Unify Journey, Classic and Custom mission selection (v0.84.0)
